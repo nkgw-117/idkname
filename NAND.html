@@ -3,48 +3,50 @@
 <title>NAND GATE</title>
 <head>
   <link rel="stylesheet" href="logicstyles.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
-  <table>
+    <header class="page-header header container-fluid">
+
+  <table class="local-table">
     <tr>
       <td class="left-cell kosugi-maru-regular" rowspan="2">
         <div class="center txtcolor">
-            <h1>LOGIC GATES VISUALIZER</h1>
-            <h3>Choose a gate below to Visualize</h3>
+            <h1 class="local-v1">LOGIC GATES VISUALIZER</h1>
+            <h3 class="local-v2">Choose a gate below to Visualize</h3>
         </div>
         <div class="left-cell-text">
             
           <h2 class="center color kosugi-maru-regular">
-              <a href="index.html"><button class="buttontxt" type="button">AND</button></a>
-              <a href="OR.html"><button class="buttontxt" type="button">OR</button></a>
-              <a href="NOT.html"><button class="buttontxt" type="button">NOT</button></a>
-              <button class="buttontxt disabled-button" type="button">NAND</button>
-              <a href="NOR.html"><button class="buttontxt" type="button">NOR</button></a>
+              <a href="index.html"><button class="button-local buttontxt" type="button">AND</button></a>
+              <a href="OR.html"><button class="button-local buttontxt" type="button">OR</button></a>
+              <a href="NOT.html"><button class="button-local buttontxt" type="button">NOT</button></a>
+              <button class="button-local buttontxt disabled-button" type="button">NAND</button>
+              <a href="NOR.html"><button class="button-local buttontxt" type="button">NOR</button></a>
           </h2>  
 
         </div>
         <div class="left-cell-text">
           <br><br>
-            <h1 class="center">-!You are currently Visualizing NAND Gate!-</h1>
+            <h1 class="center local-v1">-!You are currently Visualizing NAND Gate!-</h1>
 
         </div>
         <div class="left-cell-text">
           <br>
-            <h3 class="center">The Output will be True when one/both of the inputs is False.</h3>
+            <h3 class="center local-v2">The Output will be True when one/both of the inputs is False.</h3>
 
-            <div class="card-container">
-              <div class="card">
-                <h3>INPUT A</h3>
+            <div class="card-container-local">
+              <div class="card-local">
+                <h3 class="local-v3">INPUT A</h3>
                 <label class="switch">
                   <input type="checkbox" id="inputA">
                   <span class="slider round"></span>
                 </label>
               </div>
                 <br><br>
-              <div class="card">
-                <h3>INPUT B</h3>
+              <div class="card-local">
+                <h3 class="local-v3">INPUT B</h3>
                 <label class="switch">
                   <input type="checkbox" id="inputB">
                   <span class="slider round"></span>
@@ -52,13 +54,13 @@
               </div>
             </div>
               <br><br><br>
-          <div class="card-container">
+          <div class="card-container-local">
               <div class="card-v2">
-                <h3>OUTPUT</h3>
+                <h3 class="local-v3">OUTPUT</h3>
                   <div class="notcircle" id="light"></div>
                   <br><br>
                   <h2>
-                  <span id="output">True</span>.
+                  <span id="output" class="local-v2">True</span>.
                   </h2>
               </div>
             </div>
@@ -70,7 +72,10 @@
 
   </table>
 
-  
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
       <script>
             var input1 = document.getElementById('inputA');
             var input2 = document.getElementById('inputB');

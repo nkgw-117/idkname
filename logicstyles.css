@@ -10,11 +10,16 @@ body {
 height: fit-content;
 margin: 0;
 display: flex;
-justify-content: center;
-padding: 20px;
+}
+
+.header {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('bg1.jpg');
+background-size: cover;
 background-position: center;
-background-repeat: no-repeat;
+position: relative;
+padding: 20px;
+justify-content: center;
+display: flex;
 }
 
 .kosugi-maru-regular {
@@ -22,7 +27,7 @@ font-family: "Kosugi Maru", sans-serif;
 font-weight: 400;
 }
 
-.card-container {
+.card-container-local {
 display: flex;
 justify-content: center;
 gap: 20px;
@@ -32,7 +37,7 @@ flex-wrap: wrap;
 box-sizing: border-box;
 }
 
-.card {
+.card-local {
 background-color: rgba(255, 255, 255, 0.05);
 border-radius: 10px;
 overflow: hidden;
@@ -44,11 +49,11 @@ margin: 5px;
 box-sizing: border-box;
 }
 
-.card h3 {
+.card-local h3 {
 font-family: "Kosugi Maru", sans-serif;
 }
 
-.card img {
+.card-local img {
 text-align: center;
 overflow: hidden;
 display: flex;
@@ -58,7 +63,7 @@ object-fit: cover;
 object-position: center;
 }
 
-table {
+.local-table {
 width: 35%;
 height: 80vh;
 margin-top: 2%;
@@ -130,7 +135,7 @@ justify-content: center;
 color: var(--bgc);
 }
 
-button {
+.button-local {
 width: 125px;
 height: 40px;
 border: none;
@@ -254,3 +259,18 @@ display: inline-block;
 margin: 50px;
 }
 
+.local-v1{
+font-size: 36px;
+font-weight: 600;
+}
+
+.local-v2{
+font-size: 24px;
+font-weight: 600;
+}
+
+.local-v3 {
+font-size: 24px;
+font-weight: 600;
+padding: 15px;
+}
