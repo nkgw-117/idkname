@@ -20,6 +20,7 @@ position: relative;
 padding: 20px;
 justify-content: center;
 display: flex;
+height: 100vh;
 }
 
 .kosugi-maru-regular {
