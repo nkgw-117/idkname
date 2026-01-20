@@ -66,13 +66,14 @@ object-position: center;
 
 .local-table {
 width: 35%;
-height: 80vh;
+height: 75vh;
 margin-top: 2%;
 border-collapse: separate;
 border-spacing: 8px;
 border-radius: 12px;
 border: none;
 table-layout: fixed;
+overflow: hidden;
 }
 
 td {
@@ -247,7 +248,7 @@ width: 150px;
 background-color: #555;
 border-radius: 50%;
 display: inline-block;
-margin: 50px;
+margin: 10px;
 }
 
 .notcircle {
@@ -257,7 +258,7 @@ background-color: yellow;
 box-shadow: 0px 0px 20px yellow;
 border-radius: 50%;
 display: inline-block;
-margin: 50px;
+margin: 10px;
 }
 
 .local-v1{
